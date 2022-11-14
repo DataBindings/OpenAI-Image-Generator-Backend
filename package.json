@@ -6,8 +6,13 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "nodemon index.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   },
   "repository": {
     "type": "git",
@@ -26,8 +31,11 @@
   },
   "homepage": "https://github.com/jeremiepedden/OpenAI-Image-Generator-Backend#readme",
   "dependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "jest": "^29.3.1",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^2.0.20",
     "openai": "^3.1.0"
