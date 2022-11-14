@@ -11,11 +11,15 @@ import openai from './auth.js';
 const imageGeneration = async (description, numberOfImages = 9, resolution = '1024x1024') => {
 
   if (typeof description !== 'string') {
-    return 'Image description is required and must be of string type';
+    return 'Error: Image description must be of string type';
+  }
+
+  if (description === '') {
+    return 'Error: Image description is required';
   }
 
   if (description.trim() === '') {
-    return 'Image description is required';
+    return 'Error: Image description is blank';
   }
 
   try {
