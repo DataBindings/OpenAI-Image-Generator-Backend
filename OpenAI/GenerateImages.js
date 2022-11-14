@@ -1,4 +1,4 @@
-import openai from '../auth.js';
+import openai from './auth.js';
 
 /**
  * Generates an image using OpenAI
