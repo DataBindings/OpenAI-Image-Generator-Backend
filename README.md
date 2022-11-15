@@ -52,6 +52,23 @@ Project was built with the following dependency versions
   ```
   docker build . -t <your username>/OpenAI-Image-Generator
   ```
+
+### Using program
+* HTTP method: POST
+* Encoding type: multipart/form-data
+* Body: 
+  * Key: description
+  * Value: description of image to create
+* Address example
+  ```
+  0.0.0.0:3001/openai/image-edit-generation
+  ```
+* cURL example
+  ```
+  curl --location --request POST '0.0.0.0:3002/openai/image-generation' \
+  --form 'description="An illustration of Batman fighting Joker"'
+  ```
+  
 ## Version History
 
 * 1.0
