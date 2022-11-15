@@ -1,4 +1,4 @@
-import openai from './auth.js';
+const { openai } = require('./auth.js');
 
 /**
  * Generates an image using OpenAI
@@ -36,4 +36,4 @@ const imageGeneration = async (description, numberOfImages = 9, resolution = '10
   }
 }
 
-export default imageGeneration;
+exports.imageGeneration = imageGeneration;

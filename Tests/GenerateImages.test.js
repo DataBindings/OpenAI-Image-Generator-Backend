@@ -1,4 +1,5 @@
-import imageGeneration from '../OpenAI/GenerateImages.js'
+const { imageGeneration } = require('../openAI/generateImages.js');
+
 jest.setTimeout(300000);
 
 const description = 'an illustration of Batman fighting Joker on a commet heading towards earth';

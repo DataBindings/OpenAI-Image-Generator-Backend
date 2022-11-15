@@ -1,8 +1,8 @@
-import express from 'express';
-import multer from "multer";
+const express = require('express');
+const multer = require('multer');
 
 // Custom Functions
-import imageGeneration from './OpenAI/GenerateImages.js';
+const { imageGeneration } = require('./openAI/generateImages.js');
 
 // Multer Config
 const storage = multer.memoryStorage()
