@@ -50,7 +50,7 @@ Project was built with the following dependency versions
   ```
 * Building Docker container
   ```
-  docker build . -t <your username>/OpenAI-Image-Generator
+  docker build . -t <your username>/openai-image-generator
   ```
 
 ### Using program
@@ -65,7 +65,7 @@ Project was built with the following dependency versions
   ```
 * cURL example
   ```
-  curl --location --request POST '0.0.0.0:3002/openai/image-generation' \
+  curl --location --request POST '0.0.0.0:3001/openai/image-generation' \
   --form 'description="An illustration of Batman fighting Joker"'
   ```
   
@@ -73,6 +73,8 @@ Project was built with the following dependency versions
 
 * 1.0
     * Initial Release
+* 1.0.1
+    * Updated readme instructions
 
 ## License
 
